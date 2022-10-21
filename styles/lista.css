@@ -1,0 +1,79 @@
+:root{
+  --backColor:#111010;
+  --violetblue-bs-: rgb(83, 25, 218);
+  --fluorpink-bs: rgb(222, 13, 218)
+}
+
+.header{
+  width: 100vw;
+  background: rgb(98,98,98);
+  background: linear-gradient(180deg, rgba(98,98,98,1) 0%, rgba(17,16,16,1) 69%);
+}
+
+body{
+  margin: 0;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  background-color: var(--backColor);
+}
+
+.img-container{
+  width: 13rem;
+  height: 13rem;
+}
+
+.img-container > img{
+  width: 13rem;
+  height: 13rem;
+  object-fit: cover;
+}
+
+.btn-primary{
+  background-color: var(--fluorpink-bs);
+  border: none;
+  border-radius: 30px;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a > svg{
+  color: white;
+}
+
+.lista-canciones > div{
+  height: 2.9rem;
+}
+
+.imgLista > img{
+  height: 44.2px;
+  object-fit: contian;
+}
+
+.titulo-cancion > h4{
+  font-size: 15px;
+  position: relative;
+  top: 5px;
+  margin-top: 12px;
+}
+
+.titulo-cancion > p{
+  font-size: 10px;
+  position: relative;
+  bottom: 2px;
+}
+
+.boton-lista{
+  background-color: var(--backColor);
+  color: var(--fluorpink-bs);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 30px;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
