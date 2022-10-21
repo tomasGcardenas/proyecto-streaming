@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stringify</title>
+    <link rel="icon" type="image/x-icon" href="./images/favIcon.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles/index.css" />
+  </head>
+  <body>   
+    <header class="headerContainer">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand logo" href="#">Stringify</a>
+          <button class="toggle navbar-toggler navbarIcon" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-music-note-list" viewBox="0 0 16 16">
+              <path d="M12 13c0 1.105-1.12 2-2.5 2S7 14.105 7 13s1.12-2 2.5-2 2.5.895 2.5 2z"/>
+              <path fill-rule="evenodd" d="M12 3v10h-1V3h1z"/>
+              <path d="M11 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 16 2.22V4l-5 1V2.82z"/>
+              <path fill-rule="evenodd" d="M0 11.5a.5.5 0 0 1 .5-.5H4a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 .5 7H8a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 .5 3H8a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+          </button>
+          <div class="collapse navbar-collapse collapseMenu" id="navbarNav">
+            <ul class="navbar-nav ms-auto me-0">
+              <li class="nav-item ">
+                <a class="nav-link" aria-current="page" href="#">Acerca de nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Ayuda</a>
+              </li>
+            </ul>
+            <button onclick="loginFunction()" class="btn" id="loginBtn" type="button">Ingresar</button>
+            <button class="btn mx-2" id="freeTrialBtn" type="button">Prueba gratis</button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div class="container text-center mt-5">
+          <div class="row">
+            <div class="col-12 introductionContainer">
+              <h2 class="subtitleAd">Lleva la musica a todos lados</h2>
+              <p>Stringify es la aplicación de streaming en la que la música es más que sonido es una experiencia. Te acompañamos en esas largas horas de estudio, en una tarde de descanso o en el camino a tu trabajo.</p>
+            </div>
+            <div class="col-12 introductionContainer">
+              <h2 class="subtitleAd">Elegí entre más de 1000 artistas</h2>
+              <p>Más de 90 millones de canciones. Tenemos los mejores temas de todos los tiempos, los ultimos lanzamientos y la variedad mas grande de géneros.</p>
+            </div>
+            <div class="col-12 introductionContainer">
+              <h2 class="subtitleAd">Solo para los más exigentes</h2>
+              <p>La más alta calidad de sonido con tecnología de inmersión para que sientas que estas escuchando a tu artista favorito en vivo en todo momento.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container text-center mt-5">
+          <h2 class="text-center text-light my-5">Conocé nuestros planes</h2>
+          <div class="row d-flex justify-content-between">
+            <div class="col-sm-12 col-md-12 col-lg-3 suscriptionContainer">
+              <h4 class="subtitleSuscription">Pack Estudiantes</h4>
+              <p>La mejor música en un solo lugar y con la mejor calidad.
+                Música, podcasts y radios, además de recomendaciones solo para ti.
+                Accede a lo que recomiendan nuestros editores en playlists seleccionadas.</p>
+              <div class="d-flex flex-column align-items-end">
+                <button class="btn btnsuscription" type="submit">Conocé más</button>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-3 suscriptionContainer">
+              <h4 class="subtitleSuscription">Pack Familiar</h4>
+              <p>Consigue 5 cuentas individuales con las ventajas del Pack Premium.
+                Escucha simultáneamente en varios dispositivos. Descubre la definición asombrosa del audio sin pérdida.</p>
+              <div class="d-flex flex-column align-items-end">
+                <button class="btn btnsuscription" type="submit">Conocé más</button>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-3 suscriptionContainer">
+              <h4 class="subtitleSuscription">Pack Premium</h4>
+              <p>Selecciona y reproduce cualquier canción sin anuncios, descárgate tus favoritas y escúchalas sin conexión.
+                Tené acceso a los últimos lanzamientos antes que todos los demás</p>
+              <div class="d-flex flex-column align-items-end">
+                <button class="btn btnsuscription" type="submit">Conocé más</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="container-fluid">
+      SOY UN FOOTER
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
