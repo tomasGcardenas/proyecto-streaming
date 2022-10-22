@@ -60,20 +60,20 @@ a > svg{
 }
 
 .titulo-cancion > p{
-  font-size: 10px;
+  font-size: 11.5px;
   position: relative;
   bottom: 2px;
 }
 
 .boton-lista{
-  background-color: var(--backColor);
   color: var(--fluorpink-bs);
   display: flex;
   justify-content: center;
   align-items: center;
-  border: none;
-  border-radius: 30px;
   width: 2.5rem;
   height: 2.5rem;
 }
 
+a{
+  text-decoration: none;
+}
