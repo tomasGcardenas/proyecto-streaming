@@ -19,7 +19,7 @@
     <header class="headerContainer">
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-          <a class="navbar-brand logo" href="#">Stringify</a>
+          <a class="navbar-brand logo" href="./index.html">Stringify</a>
           <button class="toggle navbar-toggler navbarIcon" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-music-note-list" viewBox="0 0 16 16">
               <path d="M12 13c0 1.105-1.12 2-2.5 2S7 14.105 7 13s1.12-2 2.5-2 2.5.895 2.5 2z"/>
@@ -29,7 +29,7 @@
             </svg>
           </button>
           <div class="collapse navbar-collapse collapseMenu" id="navbarNav">
-            <ul class="navbar-nav ms-auto me-0">
+            <ul class="navbar-nav ms-auto me-1">
               <li class="nav-item ">
                 <a class="nav-link" aria-current="page" href="#">Acerca de nosotros</a>
               </li>
@@ -38,7 +38,7 @@
               </li>
             </ul>
             <button onclick="loginFunction()" class="btn" id="loginBtn" type="button">Ingresar</button>
-            <button class="btn mx-2" id="freeTrialBtn" type="button">Prueba gratis</button>
+            <button class="btn mx-2" id="freeTrialBtn" type="button" onclick="freeTrialFunction()">Prueba gratis</button>
           </div>
         </div>
       </nav>
@@ -72,7 +72,7 @@
                 Música, podcasts y radios, además de recomendaciones solo para ti.
                 Accede a lo que recomiendan nuestros editores en playlists seleccionadas.</p>
               <div class="d-flex flex-column align-items-end">
-                <button class="btn btnsuscription" type="submit">Conocé más</button>
+                <button class="btn btnsuscription" type="submit" onclick="freeTrialFunction()">Conocé más</button>
               </div>
             </div>
             <div class="col-sm-12 col-md-12 col-lg-3 suscriptionContainer">
@@ -80,15 +80,15 @@
               <p>Consigue 5 cuentas individuales con las ventajas del Pack Premium.
                 Escucha simultáneamente en varios dispositivos. Descubre la definición asombrosa del audio sin pérdida.</p>
               <div class="d-flex flex-column align-items-end">
-                <button class="btn btnsuscription" type="submit">Conocé más</button>
+                <button class="btn btnsuscription" type="submit" onclick="freeTrialFunction()">Conocé más</button>
               </div>
             </div>
             <div class="col-sm-12 col-md-12 col-lg-3 suscriptionContainer">
               <h4 class="subtitleSuscription">Pack Premium</h4>
               <p>Selecciona y reproduce cualquier canción sin anuncios, descárgate tus favoritas y escúchalas sin conexión.
-                Tené acceso a los últimos lanzamientos antes que todos los demás</p>
+                Tené acceso a los últimos lanzamientos antes que todos los demás.</p>
               <div class="d-flex flex-column align-items-end">
-                <button class="btn btnsuscription" type="submit">Conocé más</button>
+                <button class="btn btnsuscription" type="submit" onclick="freeTrialFunction()">Conocé más</button>
               </div>
             </div>
           </div>
