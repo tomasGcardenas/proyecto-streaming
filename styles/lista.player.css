@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@600&family=Merienda&family=Roboto+Condensed&display=swap');
+
 :root{
   --backColor:#111010;
   /* --backColor:#0b0909; */
@@ -13,6 +15,7 @@ body{
   background-color: var(--backColor);
   overflow-y: hidden;
   overflow-x: hidden;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 .contenedor-principal{

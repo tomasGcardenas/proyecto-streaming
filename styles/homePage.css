@@ -12,6 +12,21 @@ body {
   margin: 0;
   color: var(--font404color) !important;
   font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+@media (min-width: 850px){
+  body{
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+.card-body > p > a{
+  text-decoration: none;
+  color: white;
+  margin-left: 10px;
 }
 
 body > main > .navbar {
