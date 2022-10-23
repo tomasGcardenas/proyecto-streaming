@@ -11,6 +11,8 @@ body{
   margin: 0;
   height: 100vh;
   background-color: var(--backColor);
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 .contenedor-principal{
