@@ -15,6 +15,7 @@ body{
 
 .contenedor-principal{
   height: 100vh;
+  padding-top: 1rem;
 }
 
 .biblioteca{
@@ -128,4 +129,10 @@ body{
 
 .fa-pause:before{
   font-size: 1.3rem;
+}
+
+@media (min-width: 830px){
+  .contenedor-principal{
+    padding-top: 3rem;
+  }
 }
