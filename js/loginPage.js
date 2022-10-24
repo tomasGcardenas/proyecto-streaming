@@ -31,7 +31,7 @@ class User {
     if (emailOk) {
       let userFound = users.find((user) => user.email === email);
       if (userFound && userFound.password === pass) {
-        window.location.assign(window.location.origin + "/pages/usersTable.html");
+        window.location.assign(window.location.origin + "/pages/homePage.html");
       } else {
         errorAlert("Credenciales incorrectas");
       }
