@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Principal</title>
+    <title>Stringify</title>
+    <link rel="icon" type="image/x-icon" href="../images/favIcon.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
     rel="stylesheet"
@@ -11,29 +13,52 @@
     crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../styles/homePage.css" />
+    <link rel="stylesheet" href="../styles/index.css" />
+    <script src="https://kit.fontawesome.com/e2134ec132.js" crossorigin="anonymous"></script>
   </head>
-
   <body>
-    <main>
-      <nav class="navbar navbar-expand-lg bg-dark">
-        <div class="container-fluid">          
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+    <header class="headerContainer">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand logo" href="./homePage.html">Stringify</a>
+          <button class="toggle navbar-toggler navbarIcon" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-music-note-list" viewBox="0 0 16 16">
+              <path d="M12 13c0 1.105-1.12 2-2.5 2S7 14.105 7 13s1.12-2 2.5-2 2.5.895 2.5 2z"/>
+              <path fill-rule="evenodd" d="M12 3v10h-1V3h1z"/>
+              <path d="M11 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 16 2.22V4l-5 1V2.82z"/>
+              <path fill-rule="evenodd" d="M0 11.5a.5.5 0 0 1 .5-.5H4a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 .5 7H8a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 .5 3H8a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5z"/>
+            </svg>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">             
+          <div class="collapse navbar-collapse collapseMenu" id="navbarNav">
+            <ul id="headerHome" class="navbar-nav ms-auto me-2">
+              <li class="nav-item ">
+                <a class="nav-link" aria-current="page" href="#">Acerca de nosotros</a>
+              </li>
               <li class="nav-item">
+<<<<<<< HEAD
                 <a class="nav-link" href="../index.html">Cerrar Sesión</a>
               </li>                         
             </ul>            
+=======
+                <a class="nav-link" href="#">Más buscados</a>
+              </li>
+              <li class="nav-item logOut">
+                <a class="nav-link" onclick="logout()">Cerrar sesión</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="searchBar form-control" type="search" placeholder="Buscar canción,etc." aria-label="Search">
+              <button class="btn searchBtn ms-2" type="submit"><i class="fa-solid fa-compact-disc"></i></button>
+            </form>
+>>>>>>> cd9888cd707425be2a75fbff82e8739837e6f54b
           </div>
         </div>
       </nav>
-
+    </header>
+    <main>
       <div class="titleSection">
         <h1>Inicio</h1>
       </div>
-
       <section>
         <div class="titleSection">
           <h1>Recientemente agregados</h1>
@@ -145,7 +170,6 @@
           </div>
         </div>
       </section>  
-      
       <section>
         <div class="titleSection">
           <h1>Tus Playlists</h1>
@@ -258,10 +282,69 @@
         </div>
       </section>  
     </main>
+    <footer class="footer d-grid px-4 pt-4">
+      <div class="row">
+        <div class="col-sm-12 col-md-4 col-lg-3">
+          <a href="./index.html" class=" footerLogo d-flex justify-content-center align-items-center pt-5 mt-3">Stringify</a>
+        </div>
+        <div class="col-sm-12 col-md-3 col-lg-3 text-center">
+          <h4 class="mb-3">Legales</h4>
+          <div class="mb-3">
+            <a class="footerLinks text-decoration-none" target="_blank" href="#">Política de privacidad</a>
+          </div>
+          <div class="mb-3">
+            <a class="footerLinks text-decoration-none" target="_blank" href="#">Térmminos y condiciones</a>
+          </div>
+          <div class="mb-3">
+            <a class="footerLinks text-decoration-none" target="_blank" href="#">Uso de cookies</a>
+          </div>
+          <div>
+            <a class="footerLinks text-decoration-none" target="_blank" href="#">Avisos legales</a>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-2 col-lg-2 text-center">
+          <h4 class="mb-3">Seguinos</h4>
+          <div class="mb-3">
+            <a class="socialFolow" target="_blank" href="https://www.facebook.com">
+              <i class="fa-brands fa-meta fa-2x"></i>
+            </a>
+          </div>
+          <div class="mb-3">
+            <a class="socialFolow" target="_blank" href="https://www.twitter.com">
+              <i class="fa-brands fa-twitter fa-2x"></i>
+            </a>
+          </div>
+          <div>
+            <a class="socialFolow" target="_blank" href="https://www.instagram.com">
+              <i class="fa-brands fa-instagram fa-2x"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-3 col-lg-4 text-center">
+          <h4 class="mb-3">Stringify</h4>
+          <div class="mb-3">
+            <a class="footerLinks" href="#">Desarrolladores</a>
+          </div>
+          <div class="mb-3">
+            <a class="footerLinks" href="#">Trabajá con nosotros</a>
+          </div>
+          <div class="mb-3">
+            <a class="footerLinks" href="#">Prensa</a>
+          </div>
+          <div>
+            <a class="footerLinks" href="#">Contacto</a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p class="d-flex align-items-center justify-content-center mt-3 pt-3">&copy Stringify todos los derechos reservados. 2022</p>
+      </div>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
       crossorigin="anonymous"
     ></script>
+    <script src="../js/homePage.js"></script>
   </body>
 </html>
