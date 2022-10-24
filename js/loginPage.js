@@ -32,6 +32,7 @@ class User {
     if (emailOk) {
       let userFound = users.find((user) => user.email === email);
       if (userFound && userFound.password === pass) {
+        localStorage.setItem('user',JSON.stringify(userFound.id));
         window.location.assign(window.location.origin + "/pages/homePage.html");
       } else {
         errorAlert("Contraseña inválida");

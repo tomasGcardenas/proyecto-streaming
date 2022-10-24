@@ -45,13 +45,9 @@ body{
 .portada-cancion{
   display: flex;
   justify-content: center;
-  /* width: 21rem; */
 }
 
 .portada-cancion img{
-  /* border: 0.5px solid #222222; */
-  /* border-radius: 7px; */
-  /* width: 24rem; */
   height: 21rem;
   object-fit: contain;
 }
