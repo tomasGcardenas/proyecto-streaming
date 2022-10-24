@@ -1,12 +1,12 @@
-// IDENTIFICAMOS SI EL USUARIO ES ADMIN O NO
 let userId = localStorage.getItem('user');
 let users = JSON.parse(localStorage.getItem('users'));
 let userActive = users.find(user=>user.id==userId);
 if(userActive.admin){
-  let adminButton = document.createElement('li');
-  adminButton.classList.add('nav-item');
+  let adminButton = document.createElement('div');
+  adminButton.classList.add('nav-item','d-flex','flex-row','text-white',);
   adminButton.innerHTML=`
-  <a class="nav-link" href="http://127.0.0.1:5500/usersTable.html">Lista de canciones</a>
+  <a class="nav-link px-2 fs-5" href="http://127.0.0.1:5500/pages/usersTable.html">Lista de usuarios</a>
+  <a class="nav-link px-2 fs-5" href="http://127.0.0.1:5500/homePage.html">Lista de canciones</a>
   `;
   document.getElementById('headerHome').appendChild(adminButton)
 }
