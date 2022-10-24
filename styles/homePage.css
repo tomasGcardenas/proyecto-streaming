@@ -15,6 +15,26 @@ body {
   color: var(--font404color) !important;
   font-family: 'Roboto Condensed', sans-serif;
 }
+
+@media (max-width: 830px){
+  .tamaño{
+    height: 13rem;
+  }
+}
+
+@media (min-width: 850px){
+  main{
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+.card-body > p > a{
+  text-decoration: none;
+  color: white;
+  margin-left: 10px;
+}
 /* HEADER */
 .headerContainer{
   background-color: var(--darkgrey-bs);
