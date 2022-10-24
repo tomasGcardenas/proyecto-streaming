@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stringify</title>
+    <link rel="icon" type="image/x-icon" href="./images/favIcon.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <script src="https://kit.fontawesome.com/e2134ec132.js" crossorigin="anonymous"></script>
+  </head>
+  <body>   
+    <header class="headerContainer">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand logo" href="./index.html">Stringify</a>
+          <button class="toggle navbar-toggler navbarIcon" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-music-note-list" viewBox="0 0 16 16">
+              <path d="M12 13c0 1.105-1.12 2-2.5 2S7 14.105 7 13s1.12-2 2.5-2 2.5.895 2.5 2z"/>
+              <path fill-rule="evenodd" d="M12 3v10h-1V3h1z"/>
+              <path d="M11 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 16 2.22V4l-5 1V2.82z"/>
+              <path fill-rule="evenodd" d="M0 11.5a.5.5 0 0 1 .5-.5H4a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 .5 7H8a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 .5 3H8a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+          </button>
+          <div class="collapse navbar-collapse collapseMenu" id="navbarNav">
+            <ul class="navbar-nav ms-auto me-1">
+              <li class="nav-item ">
+                <a class="nav-link" aria-current="page" href="#">Acerca de nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#packs">Nuestros Packs</a>
+              </li>
+            </ul>
+            <button onclick="loginFunction()" class="btn" id="loginBtn" type="button">Ingresar</button>
+            <button class="btn mx-2" id="freeTrialBtn" type="button" onclick="freeTrialFunction()">Prueba gratis</button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- ADVERTISEMENT -->
+      <section>
+        <div class="container text-center mt-5">
+          <div class="row">
+            <div class="col-lg-8 introductionContainer">
+              <i class="fa-solid fa-music fa-fw fa-5x my-3"></i>
+              <p>Stringify es la aplicación de streaming en la que la música es más que sonido es una experiencia. Te acompañamos en esas largas horas de estudio, en una tarde de descanso o en el camino a tu trabajo.</p>
+            </div>
+            <div class="col-lg-8 introductionContainer">
+              <i class="fa-solid fa-earth-europe fa-fw fa-5x my-3"></i>
+              <p>Más de 90 millones de canciones. Tenemos los mejores temas de todos los tiempos, los ultimos lanzamientos y la variedad mas grande de géneros.</p>
+            </div>
+            <div class="col-lg-8 introductionContainer">
+              <i class="fa-solid fa-volume-high fa-fw fa-5x my-3"></i>
+              <p>La más alta calidad de sonido con tecnología de inmersión para que sientas que estas escuchando a tu artista favorito en vivo en todo momento.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- PACKS -->
+      <section>
+        <div id="packs" class="container text-center mt-4">
+          <h2 class="text-center text-light my-5">Conocé nuestros planes</h2>
+          <div class="row d-flex justify-content-between">
+            <div class="col-sm-12 col-md-12 col-lg-3 suscriptionContainer">
+              <h4 class="subtitleSuscription">Pack Familiar</h4>
+              <div class="d-flex flex-column align-content-center justify-content-center">
+                <p>Consigue 5 cuentas individuales con las ventajas del Pack Premium.
+                  Escucha simultáneamente en varios dispositivos. Descubre la definición asombrosa del audio sin pérdida.
+                </p>
+                <button class="btn btnsuscription" type="submit" onclick="freeTrialFunction()">Conocé más</button>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-3 suscriptionContainer">
+              <h4 class="subtitleSuscription">Pack Estudiantes</h4>
+              <div class="d-flex flex-column align-content-center justify-content-center">
+                <p>Escucha a tus artistas favoritos con la mejor calidad en un solo lugar. Música, podcasts, radios
+                  y recomendaciones solo para ti. Podes acceder a nuestra aplicacion desde todos tus dispositivos.
+                </p>
+                <button class="btn btnsuscription" type="submit" onclick="freeTrialFunction()">Conocé más</button>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-3 suscriptionContainer">
+              <h4 class="subtitleSuscription">Pack Premium</h4>
+              <div class="d-flex flex-column align-content-center justify-content-center">
+                <p>Selecciona y reproduce cualquier canción sin anuncios, descárgate tus favoritas y escúchalas sin conexión.
+                Tené acceso a los últimos lanzamientos antes que todos los demás.
+                </p>
+                <button class="btn btnsuscription" type="submit" onclick="freeTrialFunction()">Conocé más</button>
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- FOOTER -->
+    <footer class="footer d-grid px-4 pt-4">
+      <div class="row">
+        <div class="col-sm-12 col-md-4 col-lg-3">
+          <a href="./index.html" class=" footerLogo d-flex justify-content-center align-items-center pt-5 mt-3">Stringify</a>
+        </div>
+        <div class="col-sm-12 col-md-3 col-lg-3 text-center">
+          <h4 class="mb-3">Legales</h4>
+          <div class="mb-3">
+            <a class="footerLinks text-decoration-none" target="_blank" href="./pages/error404.html">Política de privacidad</a>
+          </div>
+          <div class="mb-3">
+            <a class="footerLinks text-decoration-none" target="_blank" href="./pages/error404.html">Térmminos y condiciones</a>
+          </div>
+          <div class="mb-3">
+            <a class="footerLinks text-decoration-none" target="_blank" href="./pages/error404.html">Uso de cookies</a>
+          </div>
+          <div>
+            <a class="footerLinks text-decoration-none" target="_blank" href="./pages/error404.html">Avisos legales</a>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-2 col-lg-2 text-center">
+          <h4 class="mb-3">Seguinos</h4>
+          <div class="mb-3">
+            <a class="socialFolow" target="_blank" href="https://www.facebook.com">
+              <i class="fa-brands fa-meta fa-2x"></i>
+            </a>
+          </div>
+          <div class="mb-3">
+            <a class="socialFolow" target="_blank" href="https://www.twitter.com">
+              <i class="fa-brands fa-twitter fa-2x"></i>
+            </a>
+          </div>
+          <div>
+            <a class="socialFolow" target="_blank" href="https://www.instagram.com">
+              <i class="fa-brands fa-instagram fa-2x"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-3 col-lg-4 text-center">
+          <h4 class="mb-3">Stringify</h4>
+          <div class="mb-3">
+            <a class="footerLinks" href="#">Desarrolladores</a>
+          </div>
+          <div class="mb-3">
+            <a class="footerLinks" href="./pages/error404.html">Trabajá con nosotros</a>
+          </div>
+          <div class="mb-3">
+            <a class="footerLinks" href="./pages/error404.html">Prensa</a>
+          </div>
+          <div>
+            <a class="footerLinks" href="./pages/error404.html">Contacto</a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p class="d-flex align-items-center justify-content-center mt-3 pt-3">&copy Stringify todos los derechos reservados. 2022</p>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

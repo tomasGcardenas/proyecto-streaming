@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2? family=Merienda&display=swap"); /* fonts titulo*/
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap");
+
+:root {
+  --color1: rgb(44, 44, 44);
+  --color2: rgba(128, 226, 164);
+  --font404color: #df0ddc !important;
+}
+body {
+  height: 100%;
+  background-color: var(--color1);
+}
+.error404Text {
+  font-size: 100px;
+  text-align: center;
+  margin: 0cm;
+  top: 25%;
+  left: 50%;
+  font-family: "Dosis", sans-serif;
+}
+
+.error404Text {
+  color: var(--font404color);
+}
+.goBackBtn {
+  color: var(--font404color);
+  font-size: 4em;
+  border-color: var(--font404color);
+}
+.goBackBtn:hover {
+  background-color: var(--font404color);
+  color: var(--color1);
+  transition: 0.3s;
+  border-color: var(--font404color);
+}
+.goBackBtn:active {
+  background-color: var(--font404color);
+  color: var(--color1);
+  transform: scale(1.1);
+  transition: 0.1s;
+  border-color: var(--font404color);
+}
+
+.bi {
+  font-size: 4em;
+  color: var(--font404color);
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stringify</title>
+    <link rel="icon" type="image/x-icon" href="../images/favIcon.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../styles/loginPage.css" />
+    <script src="https://kit.fontawesome.com/e2134ec132.js" crossorigin="anonymous"></script>
+  </head>
+<body>
+  <main class="container">
+    <div class="home">
+      <a class="home" href="../index.html"><i class="fa-solid fa-house fa-2x"></i></a>
+    </div>
+    <div>
+      <form class="formContainer" id='loginForm' onsubmit="login(event)">
+        <div>
+          <h2 class="title">Iniciar Sesión</h2>
+        </div>
+        <div class="flex-row">
+          <a class="socialIcon" href="https://accounts.google.com/ServiceLogin/signinchooser?passive=1209600&continue=https%3A%2F%2Faccounts.google.com%2F&followup=https%3A%2F%2Faccounts.google.com%2F&flowName=GlifWebSignIn&flowEntry=ServiceLogin"><i class="fa-brands fa-google-plus-g fa-2xl"></i></a>
+          <a class="socialIcon" href="https://es-la.facebook.com/login/device-based/regular/login/"><i class="fa-brands fa-meta fa-2xl"></i></a>
+          <a class="socialIcon" href="https://www.linkedin.com/login/es"><i class="fa-brands fa-linkedin-in fa-2xl"></i></a>
+        </div>
+        <div>
+          <h4 class="subtitle text-center">Ingrese con su cuenta</h4>
+          <label for="email">Correo electrónico</label>
+          <input id="email" type="email" class="form-control" placeholder="Ingrese su email" required>
+          <label for="pass">Contraseña</label>
+          <input id="pass" type="password" class="form-control" placeholder="Ingrese su contraseña" required>
+        </div>
+        <div>
+          <a class="forgotPass" href="./error404.html">¿Olvidaste tu contraseña?</a>
+          <a class="register" href="./registerPage.html">¿No tienes cuenta? Crea una aquí</a>
+          <button class="loginBtn" id="loginBtn">Ingresar</button>
+        </div>
+      </form>
+    </div>
+  </main>
+  <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+    crossorigin="anonymous"
+  ></script>
+  <script src="../js/loginPage.js"></script>
+</body>
+</html>

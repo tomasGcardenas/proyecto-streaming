@@ -1,0 +1,203 @@
+:root {
+  --violetblue-bs-: rgb(83, 25, 218);
+  --neonPink-bs: #df0ddc;
+  --darkgrey-bs: rgba(29, 29, 29, 0.866);
+}
+@font-face{
+  font-family: repuex;
+  src: url(../fonts/REPUEXPI.ttf);
+}
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@600&family=Merienda&family=Roboto+Condensed&display=swap');
+  
+body {
+  background-color: var(--color1) !important;
+  margin: 0;
+  color: var(--font404color) !important;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+@media (max-width: 830px){
+  .tamaño{
+    height: 13rem;
+  }
+}
+
+@media (min-width: 850px){
+  main{
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+.card-body > p > a{
+  text-decoration: none;
+  color: white;
+  margin-left: 10px;
+}
+/* HEADER */
+.headerContainer{
+  background-color: var(--darkgrey-bs);
+  border-bottom: 1px solid var(--neonPink-bs);
+}
+.logo{
+  color: var(--neonPink-bs);
+  font-size: 2.2rem;
+  font-family: repuex;
+  text-shadow: 0 0 10px var(--neonPink-bs);
+}
+.collapseMenu > ul > li > a{
+  color: whitesmoke;
+  font-size: 1.1rem;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.collapseMenu > ul > li > a:hover{
+  color: var(--neonPink-bs);
+}
+.navbarIcon{
+  border:2px solid var(--neonPink-bs);
+  color: var(--neonPink-bs);
+}
+.navbarIcon:focus{
+  box-shadow: inset 0 0 10px var(--neonPink-bs);
+}
+.logOut{
+  cursor: pointer;
+}
+.searchBar{
+  border: 3px solid var(--neonPink-bs);
+}
+.searchBar:focus{
+  border: 3px solid var(--neonPink-bs);
+  outline: none!important;
+  box-shadow: none;
+}
+.searchBtn{
+  color: var(--neonPink-bs);
+  box-shadow: inset 0 0 10px var(--neonPink-bs);
+  border-radius: 50%;
+
+}
+.searchBtn:hover{
+  color: whitesmoke!important;
+  transform: rotate(180deg);
+  transition: 1s;
+}
+/* BODY */
+main > div:first-child {
+  border-bottom: 1px solid rgb(77, 77, 77);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; 
+}
+main > div:first-child > h1 {
+  margin: 1rem 1rem 1rem 1rem;
+  padding: 1rem 1rem;
+}
+.titleSection > h1 {
+  margin-left: 1rem;
+  margin-top: 2rem;
+  color: var(--neonPink-bs);
+}
+.carousel {
+  margin-left: 0.2rem;
+  margin-right: 0.2rem;
+  height: 18rem;
+}
+.carouselBtnArea {
+  padding-top: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.carouselBtnArea > button {
+  background-color: #df0ddc;
+  border-color: #df0ddc;
+  color: white;
+}
+.carouselBtnArea > button:hover {
+  background-color: #3f093c;
+  border-color: #3f093c;
+  color: white;
+}
+.carouselBtnArea > button:active {
+  background-color: #3f093c !important;
+  border-color:#df0ddc !important;
+  color: white !important;
+}
+.carousel-item > div:first-child {
+  height: 18rem;
+  width: 100%;
+}
+.card {
+  margin: 2rem 0.2rem 1rem 0.2rem;
+  height: 80%;
+  max-height: 100%;
+  width: 100%;
+  color: white; 
+  border-color: #df0ddc !important;
+}
+.card:hover {
+  transform: scale(1.03);
+  transition: 0.3s;
+}
+.card-img-top {
+  height: 70%;
+  max-height: 70%;
+  min-height: 70%;
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  object-fit:cover;
+}
+.card-body {
+  height: 30%;
+  max-height: 30%;
+  min-height: 30%;
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  padding: 0;
+  background-color: #3f093c; 
+}
+
+.card-body > .card-text {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  .carousel-item > div:first-child {
+    height: 17rem;
+  }
+  .card {
+    height: 15rem;
+    min-height: 15rem;
+    max-height: 15rem;
+  }
+  .card-img-top {
+    height: 65%;
+    max-height: 65%;
+    min-height: 65%;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+  }
+  .card-body {
+    height: 35%;
+    max-height: 35%;
+    min-height: 35%;
+  } 
+  .card-body > .card-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (min-width: 991px) {
+  main > nav {
+    display: none !important; 
+  }
+}
+
