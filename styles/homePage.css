@@ -16,7 +16,12 @@ body {
   margin: 0;
   color: var(--font404color) !important;
   font-family: 'Roboto Condensed', sans-serif;
+}
 
+@media (max-width: 830px){
+  .tamaño{
+    height: 13rem;
+  }
 }
 
 @media (min-width: 850px){
