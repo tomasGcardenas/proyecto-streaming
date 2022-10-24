@@ -20,4 +20,3 @@ const logout = () =>{
   localStorage.removeItem('user');
   window.location.assign(window.location.origin + '/index.html')
 }
-
