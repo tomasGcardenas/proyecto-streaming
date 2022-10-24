@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@600&family=Merienda&family=Roboto+Condensed&display=swap');
 :root {
   --violetblue-bs-: rgb(83, 25, 218);
   --neonPink-bs: #df0ddc;
@@ -6,8 +5,10 @@
 }
 @font-face{
   font-family: repuex;
-  src: url(../fonts/REPUEXPI.ttf);}
-
+  src: url(../fonts/REPUEXPI.ttf);
+}
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@600&family=Merienda&family=Roboto+Condensed&display=swap');
+  
 body {
   background-color: var(--color1) !important;
   margin: 0;
