@@ -13,7 +13,9 @@
     crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../styles/homePage.css" />
+
     <link rel="stylesheet" href="../styles/index.css" />
+
     <script src="https://kit.fontawesome.com/e2134ec132.js" crossorigin="anonymous"></script>
   </head>
   <body>
@@ -43,6 +45,7 @@
             </ul>
             <form class="d-flex" role="search">
               <input class="searchBar form-control" type="search" placeholder="Buscar canción,etc." aria-label="Search">
+
               <button class="btn searchBtn ms-2" type="submit"><i class="fa-solid fa-compact-disc"></i></button>
             </form>
           </div>
@@ -57,7 +60,11 @@
         <div class="titleSection">
           <h1>Recientemente agregados</h1>
         </div>
-        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="d-flex justify-content-between carouselBtnArea">
+          <button type="button" class="btn" data-bs-target="#carouselExampleControls" data-bs-slide="prev"><i class="fas fa-arrow-left"></i></button>
+          <button type="button" class="btn" data-bs-target="#carouselExampleControls" data-bs-slide="next"><i class="fas fa-arrow-right"></i></button>
+        </div>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <div class="w-100 d-flex justify-content-center">
@@ -66,28 +73,28 @@
                     <img src="../images/artistImg/ACRU.jfif" class="card-img-top" alt="Acru">
                     <div class="card-body">
                       <p class="card-text">Acru</p>
-                      <a href="#" class="stretched-link"></a>
+                      <a href="../pages/error404.html" class="stretched-link"></a>
                     </div>
                   </div>
                   <div class="card">
                     <img src="../images/artistImg/ca7riel.jfif" class="card-img-top" alt="Ca7riel">
                     <div class="card-body">
                       <p class="card-text">Ca7riel</p>
-                      <a href="#" class="stretched-link"></a>
+                      <a href="../pages/error404.html" class="stretched-link"></a>
                     </div>
                   </div>
                   <div class="card">
                     <img src="../images/artistImg/charly-garcia.jfif" class="card-img-top" alt="Charly Garcia">
                     <div class="card-body">
                       <p class="card-text">Charly Garcia</p>
-                      <a href="#" class="stretched-link"></a>
+                      <a href="../pages/error404.html" class="stretched-link"></a>
                     </div>
                   </div>
                   <div class="card">
                     <img src="../images/artistImg/clara-cava.jfif" class="card-img-top" alt="Clara Cava">
                     <div class="card-body">
                       <p class="card-text">Clara Cava</p>
-                      <a href="#" class="stretched-link"></a>
+                      <a href="../pages/error404.html" class="stretched-link"></a>
                     </div>
                   </div>
                 </div>
@@ -161,14 +168,18 @@
                 </div>
               </div>
             </div>
-          </div>
-        </div>
+          </div>         
+        </div>       
       </section>  
       <section>
         <div class="titleSection">
           <h1>Tus Playlists</h1>
         </div>
-        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="d-flex justify-content-between carouselBtnArea">
+          <button type="button" class="btn" data-bs-target="#carouselExampleControls1" data-bs-slide="prev"><i class="fas fa-arrow-left"></i></button>
+          <button type="button" class="btn" data-bs-target="#carouselExampleControls1" data-bs-slide="next"><i class="fas fa-arrow-right"></i></button>
+        </div>
+        <div id="carouselExampleControls1" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <div class="w-100 d-flex justify-content-center">
