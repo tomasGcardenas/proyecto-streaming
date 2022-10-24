@@ -146,10 +146,10 @@ main > div:first-child > h1 {
     max-height: 35%;
     min-height: 35%;
   } 
-  .card-text {
+  .card-body > .card-text {
     display: flex;
-    align-items: flex-start;
-    justify-content: start;
+    align-items: center;
+    justify-content: center;
   }
 }
 @media (min-width: 991px) {
