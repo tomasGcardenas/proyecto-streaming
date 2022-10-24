@@ -3,13 +3,13 @@
   --darkgrey-bs: rgba(29, 29, 29, 0.866);
   --lightgrey-bs: #4d4d4d;
 }
-@font-face{
+@font-face {
   font-family: repuex;
   src: url(../fonts/REPUEXPI.ttf);
 }
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
 
-body{
+body {
   background-image: url(../images/backgroundIndex.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -17,54 +17,54 @@ body{
   background-attachment: fixed;
 }
 /* HEADER */
-.headerContainer{
+.headerContainer {
   background-color: var(--darkgrey-bs);
 }
-.logo{
+.logo {
   color: var(--neonPink-bs);
   font-size: 2.2rem;
   font-family: repuex;
   text-shadow: 0 0 10px var(--neonPink-bs);
 }
-.collapseMenu > ul > li > a{
+.collapseMenu > ul > li > a {
   color: whitesmoke;
   font-size: 1.2rem;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
 }
-.collapseMenu > ul > li > a:hover{
+.collapseMenu > ul > li > a:hover {
   color: var(--neonPink-bs);
 }
-#loginBtn{
+#loginBtn {
   color: whitesmoke;
   border: 1px solid whitesmoke;
   font-size: 1.1rem;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
 }
-#loginBtn:hover{
+#loginBtn:hover {
   color: var(--neonPink-bs);
   border: 1px solid var(--neonPink-bs);
   transform: scale(95%);
 }
-#freeTrialBtn{
+#freeTrialBtn {
   color: var(--neonPink-bs);
   border: 1px solid whitesmoke;
   font-size: 1.1rem;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
 }
-#freeTrialBtn:hover{
+#freeTrialBtn:hover {
   color: var(--neonPink-bs);
   border: 1px solid var(--neonPink-bs);
-  transform: scale(95%)
+  transform: scale(95%);
 }
-.navbarIcon{
-  border:2px solid var(--neonPink-bs);
+.navbarIcon {
+  border: 2px solid var(--neonPink-bs);
   color: var(--neonPink-bs);
 }
-.navbarIcon:focus{
+.navbarIcon:focus {
   box-shadow: inset 0 0 10px var(--neonPink-bs);
 }
 /* MAIN */
-.introductionContainer{
+.introductionContainer {
   margin: auto;
   margin-top: 2.5rem;
   color: whitesmoke;
@@ -74,20 +74,20 @@ body{
   padding: 1rem;
   box-shadow: inset 0 0 10px #494949;
 }
-.introductionContainer > p{
+.introductionContainer > p {
   font-size: 1.3rem;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   padding: 2rem;
   text-align: justify;
 }
-.subtitleAd{
+.subtitleAd {
   font-size: 2rem;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   color: whitesmoke;
   border-bottom: 1px solid var(--neonPink-bs);
   padding: 2rem;
 }
-.suscriptionContainer{
+.suscriptionContainer {
   color: whitesmoke;
   text-align: justify;
   backdrop-filter: blur(15px);
@@ -97,28 +97,28 @@ body{
   margin-bottom: 2rem;
   max-width: 100%;
 }
-.suscriptionContainer > div > p{
+.suscriptionContainer > div > p {
   font-size: 1.3rem;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   padding-top: 2rem;
 }
-.subtitleSuscription{
+.subtitleSuscription {
   border-bottom: 1px solid var(--neonPink-bs);
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
 }
-.btnsuscription{
+.btnsuscription {
   color: whitesmoke;
   border: 1px solid whitesmoke;
   width: 40%;
   margin-right: 1rem;
   margin-left: auto;
 }
-.btnsuscription:hover{
-  color: var(--neonPink-bs)!important;
-  border: 1px solid var(--neonPink-bs)!important;
-  transform: scale(95%)
+.btnsuscription:hover {
+  color: var(--neonPink-bs) !important;
+  border: 1px solid var(--neonPink-bs) !important;
+  transform: scale(95%);
 }
-.btnSuscriptionContainer{
+.btnSuscriptionContainer {
   width: 100%;
   height: 100%;
   display: flex;
@@ -127,59 +127,59 @@ body{
   align-content: flex-end;
 }
 /* FOOTER */
-footer{
+footer {
   background-color: var(--darkgrey-bs);
   width: 100%;
   height: auto;
   color: whitesmoke;
 }
-.footerLogo{
+.footerLogo {
   color: var(--neonPink-bs);
   font-size: 2.5rem;
   font-family: repuex;
   text-decoration: none;
 }
-.footerLogo{
-  color: var(--neonPink-bs)!important;
+.footerLogo {
+  color: var(--neonPink-bs) !important;
 }
-.footerLinks{
+.footerLinks {
   color: whitesmoke;
   text-decoration: none;
 }
-.footerLinks:hover{
+.footerLinks:hover {
   color: var(--neonPink-bs);
   text-decoration: none;
 }
-.socialFolow{
+.socialFolow {
   color: whitesmoke;
   text-decoration: none;
 }
-.socialFolow:hover{
-  color:var(--neonPink-bs);
+.socialFolow:hover {
+  color: var(--neonPink-bs);
   text-shadow: 0 0 10px var(--neonPink-bs);
 }
 /* MEDIA QUERIES */
-@media (max-width: 576px) and (min-width: 220px){
-  .introductionContainer > p{
+@media (max-width: 576px) and (min-width: 220px) {
+  .introductionContainer > p {
     font-size: 1rem;
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     padding: 2rem;
     text-align: justify;
   }
-  .subtitleAd{
+  .subtitleAd {
     font-size: 1.5rem;
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     color: whitesmoke;
     border-bottom: 1px solid var(--neonPink-bs);
     padding: 2rem;
   }
-  .suscriptionContainer > p{
+  .suscriptionContainer > p {
     font-size: 1rem;
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     padding-top: 2rem;
   }
-  .subtitleSuscription{
+  .subtitleSuscription {
     border-bottom: 1px solid var(--neonPink-bs);
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
   }
 }

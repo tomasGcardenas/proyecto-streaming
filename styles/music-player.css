@@ -1,46 +1,46 @@
-:root{
-  --backColor:#111010;
+:root {
+  --backColor: #111010;
   /* --backColor:#0b0909; */
 }
 
-.botonAtras{
+.botonAtras {
   color: rebeccapurple;
 }
 
-body{
+body {
   margin: 0;
   height: 100vh;
   background-color: var(--backColor);
 }
 
-.contenedor-principal{
+.contenedor-principal {
   height: 100vh;
 }
 
-.biblioteca{
+.biblioteca {
   width: 100vw;
   color: white;
   font-size: 10px;
   font-weight: 500;
 }
 
-.contenedor-principal > div:first-child > div:nth-child(1){
+.contenedor-principal > div:first-child > div:nth-child(1) {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.contenedor-principal > div:first-child > div:nth-child(2){
+.contenedor-principal > div:first-child > div:nth-child(2) {
   font-size: 13px;
 }
 
-.portada-cancion{
+.portada-cancion {
   display: flex;
   justify-content: center;
   /* width: 21rem; */
 }
 
-.portada-cancion img{
+.portada-cancion img {
   /* border: 0.5px solid #222222; */
   /* border-radius: 7px; */
   /* width: 24rem; */
@@ -48,13 +48,13 @@ body{
   object-fit: contain;
 }
 
-.music-container{
+.music-container {
   border-radius: 15px;
   position: relative;
   top: 5rem;
 }
 
-.navigation{
+.navigation {
   position: relative;
   bottom: 3.5rem;
   display: flex;
@@ -63,21 +63,21 @@ body{
   z-index: 1;
 }
 
-.navigation > button{
+.navigation > button {
   position: relative;
   top: 2px;
   background-color: var(--backColor);
   z-index: -4;
 }
 
-.volverBoton{
+.volverBoton {
   border: 0;
   background-color: white;
   cursor: pointer;
   font-size: 20px;
 }
 
-.action-btn{
+.action-btn {
   background-color: white;
   cursor: pointer;
   border: 0;
@@ -85,47 +85,49 @@ body{
   padding: 2.5rem;
 }
 
-.music-info{
+.music-info {
   border-radius: 15px 15px 0 0;
   position: relative;
   bottom: 2rem;
 }
 
-.progress-container{
+.progress-container {
   background-color: rgb(224, 224, 224);
-  position: relative; 
+  position: relative;
   bottom: 6.5rem;
   border-radius: 0.375rem;
 }
 
-.progress{
+.progress {
   background-color: rebeccapurple;
   width: 0%;
   height: 4px;
   transition: width 0.1s linear;
 }
 
-#title{
+#title {
   text-align: center;
 }
 
-.music-info > h4, p{
+.music-info > h4,
+p {
   text-align: center;
   color: white;
 }
 
-.fas{
+.fas {
   color: white;
 }
 
-#play{
+#play {
   width: 7rem;
 }
 
-#prev, #next {
+#prev,
+#next {
   font-size: 1.1rem;
 }
 
-.fa-pause:before{
+.fa-pause:before {
   font-size: 1.3rem;
 }

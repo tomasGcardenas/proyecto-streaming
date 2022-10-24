@@ -68,7 +68,7 @@ const addUsers = () => {
 const edit = (id) => {
 	editingUser = id;
 	const users = JSON.parse(localStorage.getItem('users'));
-	const userFound = users.find((user) => user.id === id);
+	const userFound = users.find((user) => user.id == id);
 	emailEdit.value = userFound.email;
 	userLabelEdit.value = userFound.userLabel;
 	fullNameEdit.value = userFound.fullName;
@@ -108,12 +108,13 @@ const deleteUser = (id) => {
 	listarUsuarios();
 };
 
+// CAMBIAR EL == POR UN STRINGIFY Y PARSE
 const showMore = (id) => {
 	$('#showMore').modal('show');
 	const usersFromLS = JSON.parse(localStorage.getItem('users'));
-	const showUsers = usersFromLS.find((user) => user.id === id);
+	const showUsers = usersFromLS.find((user) => user.id == id);
 	const body = `
-	<label class="fs-4"><b>Usuario:</b> ${showUsers.userLabel}</label>
+	<label class="fs-4"><b>Usuario:</b> ${showUsers?.userLabel}</label>
 	<br>
 	<label class="fs-4"><b>Nombre y Apellido:</b> ${showUsers.fullName}</label>
 	<br>
@@ -134,13 +135,13 @@ function listarUsuarios(filteredUsers) {
 				<td>${user.fullName}</td>
 				<td>${user.email}</td>
 				<td>
-					<button class="btn btn-outline-success" onclick="showMore('${user.id}')">Ver más</button>
+					<button class="btn modalButton" onclick="showMore('${user.id}')"><i class="fa-solid fa-circle-info"></i></button>
 				</td>
 				<td>
-					<button class="btn btn-outline-danger" onclick="deleteUser('${user.id}')">Borrar</button>
+				<button class="btn btn-outline-danger" onclick="deleteUser('${user.id}')"><i class="fa-solid fa-trash"></i></button>
 				</td>
 				<td>
-					<button class="btn btn-outline-warning" onclick="editUser('${user.id}')">Editar</button>
+				<button class="btn btn-outline-warning" onclick="edit('${user.id}')"><i class="fa-solid fa-pen-to-square"></i></button>
 				</td>
 			</tr>
 			`;
@@ -158,13 +159,13 @@ function listarUsuarios(filteredUsers) {
 				<td>${user.fullName}</td>
 				<td>${user.email}</td>
 				<td>
-					<button class='btn modalButton' onclick="showMore('${user.id}')">Ver más</button>
+					<button class='btn modalButton' onclick="showMore('${user.id}')"><i class="fa-solid fa-circle-info"></i></button>
 				</td>
 				<td>
-				<button class='btn btn-outline-warning' onclick="editUser('${user.id}')">Editar</button>
+				<button class='btn btn-outline-warning' onclick="edit('${user.id}')"><i class="fa-solid fa-pen-to-square"></i></button>
 				</td>
 				<td>
-					<button class='btn btn-outline-danger' onclick="deleteUser('${user.id}')">Borrar</button>
+					<button class='btn btn-outline-danger' onclick="deleteUser('${user.id}')"><i class="fa-solid fa-trash"></i></button>
 				</td>
 				</tr>
 			`;
