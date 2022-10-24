@@ -20,7 +20,7 @@ body {
 }
 
 @media (min-width: 850px){
-  body{
+  main{
     padding-left: 2.5rem;
     padding-right: 2.5rem;
     padding-bottom: 5rem;
