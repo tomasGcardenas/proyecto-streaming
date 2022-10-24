@@ -103,8 +103,15 @@ input{
 .forgotPass:hover{
   color: whitesmoke;
 }
-
-/* REGISTER */
+.register{
+  color: var(--neonPink-bs);
+  font-size: 1.3rem;
+  text-decoration: none;
+  text-align: center
+}
+.register:hover{
+  color: whitesmoke;
+}
 #terms{
   width: 1rem;
   height: 1rem;

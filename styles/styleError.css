@@ -5,7 +5,7 @@
 :root {
   --color1: rgb(44, 44, 44);
   --color2: rgba(128, 226, 164);
-  --font404color: rgb(83, 25, 218);
+  --font404color: #df0ddc !important;
 }
 body {
   height: 100%;
@@ -46,3 +46,4 @@ body {
   font-size: 4em;
   color: var(--font404color);
 }
+

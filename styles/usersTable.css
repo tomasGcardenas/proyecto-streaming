@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@600&family=Merienda&family=Roboto+Condensed&display=swap');
+:root {
+  --violetblue-bs-: rgb(83, 25, 218);
+  --neonPink-bs: #df0ddc;
+  --darkgrey-bs: rgba(29, 29, 29, 0.866);
+  --lightgrey-bs: #4d4d4d;
+}
+@font-face{
+  font-family: repuex;
+  src: url(../fonts/REPUEXPI.ttf);
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(33, 37, 41);
+}
+.users{
+  width: 100%;
+  height: 10rem;
+  background-color: rgb(12, 11, 11);
+  color: white;
+  text-align: center;
+  padding-top: 2rem;
+  font-family: repuex;
+}
+.AbmTable{
+  width: 100%;
+  height: auto;
+}
+.mHeader{
+  background-color: rgb(33, 37, 41);
+  height: 4rem;
+  border-bottom: 1px solid var(--neonPink-bs);
+}
+.modalColor{
+  color: var(--neonPink-bs);
+}
+.modalButton{
+  color: var(--neonPink-bs);
+  border: 1px solid var(--neonPink-bs);
+  border-radius: 5px;
+}
+.modalButton:hover{
+  color: black !important;
+  background-color: var(--neonPink-bs)!important;
+  border-radius: 5px;
+}
+.btnColor{
+  background-color: var(--neonPink-bs);
+}
+table > thead > tr > th {
+  color: var(--neonPink-bs);
+  font-size: 1.2rem;
+  font-family: repuex;
+}
